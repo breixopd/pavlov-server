@@ -1,7 +1,5 @@
 #!/bin/bash
 
-PORT="${PORT:-7777}"
-
 _update() {
 	echo "Updating Pavlov VR";
         cd ~/Steam && ./steamcmd.sh +login anonymous +force_install_dir /home/steam/pavlovserver +app_update 622970 -beta shack +exit
@@ -9,7 +7,7 @@ _update() {
 
 _run() {
 	echo "Running Pavlov VR Server";
-        cd ~/pavlovserver && ./PavlovServer.sh -PORT="${PORT}"
+        cd ~/pavlovserver && ./PavlovServer.sh
 }
 
 case $1 in
