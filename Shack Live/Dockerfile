@@ -15,7 +15,7 @@ RUN chmod +x ~/pavlovserver/PavlovServer.sh
 RUN mkdir -p ~/pavlovserver/Pavlov/Saved/Config/LinuxServer
 
 WORKDIR /home/steam
-COPY --chown=steam:steam start.sh .
+RUN curl https://raw.githubusercontent.com/breixopd/pavlov-server/main/Shack%20Live/start.sh -o start.sh
 RUN chmod +x start.sh
 
 ENTRYPOINT ["./start.sh"]
