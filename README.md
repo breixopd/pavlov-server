@@ -28,6 +28,6 @@ services:
 
 #### How do I use this?
 
-You will have to download and locally use the images in this repository or build it yourself from the dockerfile (will need to do if you want to change port)
+You will have to build the images yourself from the dockerfile (change port in `ENV PORT=` to your own, 7777 by default as shown in the wiki)
 The images and all other files are in their respective folders, you do not need to download the `sh` files as they are automatically pulled by the images
 
